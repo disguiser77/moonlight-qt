@@ -1,0 +1,680 @@
+<FlowDocument xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" FontFamily="Segoe UI" FontSize="12">
+  <FlowDocument.Tag><![CDATA[{
+  "timestamp": "2025-10-27 17:06:54",
+  "files": {
+    "D:\\WorkSpace\\QtSpace\\moonlight-qt\\AntiHooking\\AntiHooking.vcxproj": {
+      "before": "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",
+      "after": "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"
+    }
+  }
+}]]></FlowDocument.Tag>
+  <Section Margin="0,24" TextAlignment="Center">
+    <Paragraph FontSize="24" FontWeight="Bold" Margin="12,0">
+      <LineBreak />
+      <Span Foreground="Gray">Qt Visual Studio Tools</Span>
+    </Paragraph>
+    <Paragraph FontSize="42" Margin="12,0" FontWeight="Bold">
+      <Span TextDecorations="Underline">Project Format Conversion</Span>
+    </Paragraph>
+    <Paragraph Margin="12,8" FontSize="18">
+      <Span>Report generated on 2025-10-27 17:06:54</Span>
+    </Paragraph>
+  </Section>
+  <Section>
+    <Paragraph FontSize="32" FontWeight="Bold" Margin="12,0">
+      <Span>Files</Span>
+    </Paragraph>
+    <Paragraph Margin="24,12,0,0">
+      <Span FontFamily="Consolas" FontSize="14" Background="WhiteSmoke"><![CDATA[D:\WorkSpace\QtSpace\moonlight-qt\AntiHooking\AntiHooking.vcxproj]]></Span>
+      <LineBreak />
+      <Hyperlink NavigateUri="file://D:\WorkSpace\QtSpace\moonlight-qt\AntiHooking\AntiHooking.vcxproj?before">[Before]</Hyperlink>
+      <Hyperlink NavigateUri="file://D:\WorkSpace\QtSpace\moonlight-qt\AntiHooking\AntiHooking.vcxproj?after">[After]</Hyperlink>
+      <Hyperlink NavigateUri="file://D:\WorkSpace\QtSpace\moonlight-qt\AntiHooking\AntiHooking.vcxproj?diff&amp;before&amp;after">
+                        [Diff before/after]
+                    </Hyperlink>
+      <Hyperlink NavigateUri="file://D:\WorkSpace\QtSpace\moonlight-qt\AntiHooking\AntiHooking.vcxproj?diff&amp;before&amp;current">
+                        [Diff before/current]
+                    </Hyperlink>
+      <Hyperlink NavigateUri="file://D:\WorkSpace\QtSpace\moonlight-qt\AntiHooking\AntiHooking.vcxproj?diff&amp;after&amp;current">
+                        [Diff after/current]
+                    </Hyperlink>
+      <LineBreak />
+    </Paragraph>
+  </Section>
+  <Section>
+    <Paragraph FontSize="32" FontWeight="Bold" Margin="12,0">
+      <Span>Changes</Span>
+    </Paragraph>
+    <Paragraph FontSize="20" FontWeight="Bold" Margin="12">
+      <Span><![CDATA[🡺 Replacing paths with "$(QTDIR)"]]></Span>
+    </Paragraph>
+    <Table CellSpacing="0" BorderBrush="Gray" BorderThickness="0.5">
+      <Table.Columns>
+        <TableColumn />
+        <TableColumn />
+      </Table.Columns>
+      <TableRowGroup>
+        <TableRow Background="Orange">
+          <TableCell ColumnSpan="2" BorderThickness="0.5" BorderBrush="Gray">
+            <Paragraph Margin="10,5" FontWeight="Bold">
+              <Span><![CDATA[D:\WorkSpace\QtSpace\moonlight-qt\AntiHooking\AntiHooking.vcxproj]]></Span>
+            </Paragraph>
+          </TableCell>
+        </TableRow>
+        <TableRow>
+          <TableCell ColumnSpan="2" Background="WhiteSmoke" BorderBrush="Gray" BorderThickness="0.5" />
+        </TableRow>
+        <TableRow>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0">
+              <Span><![CDATA[      <AdditionalIncludeDirectories>.;..\libs\windows\include;]]></Span><Span Background="LightCoral"><![CDATA[D:\Software\Qt\6.6.3\msvc2019_64\mkspecs\win32-msvc]]></Span><Span><![CDATA[;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>]]></Span>
+            </Paragraph>
+          </TableCell>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0">
+              <Span><![CDATA[      <AdditionalIncludeDirectories>.;..\libs\windows\include;]]></Span><Span Background="LightGreen"><![CDATA[$(QTDIR)\mkspecs\win32-msvc]]></Span><Span><![CDATA[;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>]]></Span>
+            </Paragraph>
+          </TableCell>
+        </TableRow>
+        <TableRow>
+          <TableCell ColumnSpan="2" Background="WhiteSmoke" BorderBrush="Gray" BorderThickness="0.5" />
+        </TableRow>
+        <TableRow>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0">
+              <Span><![CDATA[      <AdditionalIncludeDirectories>.;..\libs\windows\include;]]></Span><Span Background="LightCoral"><![CDATA[D:\Software\Qt\6.6.3\msvc2019_64\mkspecs\win32-msvc]]></Span><Span><![CDATA[;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>]]></Span>
+            </Paragraph>
+          </TableCell>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0">
+              <Span><![CDATA[      <AdditionalIncludeDirectories>.;..\libs\windows\include;]]></Span><Span Background="LightGreen"><![CDATA[$(QTDIR)\mkspecs\win32-msvc]]></Span><Span><![CDATA[;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>]]></Span>
+            </Paragraph>
+          </TableCell>
+        </TableRow>
+      </TableRowGroup>
+    </Table>
+    <Paragraph FontSize="20" FontWeight="Bold" Margin="12">
+      <Span><![CDATA[🡺 Converting custom build steps to Qt/MSBuild items]]></Span>
+    </Paragraph>
+    <Table CellSpacing="0" BorderBrush="Gray" BorderThickness="0.5">
+      <Table.Columns>
+        <TableColumn />
+        <TableColumn />
+      </Table.Columns>
+      <TableRowGroup>
+        <TableRow Background="Orange">
+          <TableCell ColumnSpan="2" BorderThickness="0.5" BorderBrush="Gray">
+            <Paragraph Margin="10,5" FontWeight="Bold">
+              <Span><![CDATA[D:\WorkSpace\QtSpace\moonlight-qt\AntiHooking\AntiHooking.vcxproj]]></Span>
+            </Paragraph>
+          </TableCell>
+        </TableRow>
+        <TableRow>
+          <TableCell ColumnSpan="2" Background="WhiteSmoke" BorderBrush="Gray" BorderThickness="0.5" />
+        </TableRow>
+        <TableRow>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0">
+              <Span><![CDATA[      ]]></Span><Span Background="LightCoral"><![CDATA[<AdditionalIncludeDirectories>.;..]]></Span><Span><![CDATA[\libs\windows\include;$(QTDIR)\mkspecs\win32-msvc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>]]></Span>
+            </Paragraph>
+          </TableCell>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0">
+              <Span><![CDATA[      ]]></Span><Span Background="LightGreen"><![CDATA[<AdditionalIncludeDirectories>GeneratedFiles\$(ConfigurationName);GeneratedFiles;.;..]]></Span><Span><![CDATA[\libs\windows\include;$(QTDIR)\mkspecs\win32-msvc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>]]></Span>
+            </Paragraph>
+          </TableCell>
+        </TableRow>
+        <TableRow>
+          <TableCell ColumnSpan="2" Background="WhiteSmoke" BorderBrush="Gray" BorderThickness="0.5" />
+        </TableRow>
+        <TableRow>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0">
+              <Span><![CDATA[      ]]></Span><Span Background="LightCoral"><![CDATA[<AdditionalIncludeDirectories>.;..]]></Span><Span><![CDATA[\libs\windows\include;$(QTDIR)\mkspecs\win32-msvc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>]]></Span>
+            </Paragraph>
+          </TableCell>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0">
+              <Span><![CDATA[      ]]></Span><Span Background="LightGreen"><![CDATA[<AdditionalIncludeDirectories>GeneratedFiles\$(ConfigurationName);GeneratedFiles;.;..]]></Span><Span><![CDATA[\libs\windows\include;$(QTDIR)\mkspecs\win32-msvc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>]]></Span>
+            </Paragraph>
+          </TableCell>
+        </TableRow>
+      </TableRowGroup>
+    </Table>
+    <Paragraph FontSize="20" FontWeight="Bold" Margin="12">
+      <Span><![CDATA[🡺 Enabling multi-processor compilation]]></Span>
+    </Paragraph>
+    <Table CellSpacing="0" BorderBrush="Gray" BorderThickness="0.5">
+      <Table.Columns>
+        <TableColumn />
+        <TableColumn />
+      </Table.Columns>
+      <TableRowGroup>
+        <TableRow Background="Orange">
+          <TableCell ColumnSpan="2" BorderThickness="0.5" BorderBrush="Gray">
+            <Paragraph Margin="10,5" FontWeight="Bold">
+              <Span><![CDATA[D:\WorkSpace\QtSpace\moonlight-qt\AntiHooking\AntiHooking.vcxproj]]></Span>
+            </Paragraph>
+          </TableCell>
+        </TableRow>
+        <TableRow>
+          <TableCell ColumnSpan="2" Background="WhiteSmoke" BorderBrush="Gray" BorderThickness="0.5" />
+        </TableRow>
+        <TableRow>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0" />
+          </TableCell>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0">
+              <Span Background="LightGreen"><![CDATA[      <MultiProcessorCompilation>true</MultiProcessorCompilation>]]></Span>
+            </Paragraph>
+          </TableCell>
+        </TableRow>
+        <TableRow>
+          <TableCell ColumnSpan="2" Background="WhiteSmoke" BorderBrush="Gray" BorderThickness="0.5" />
+        </TableRow>
+        <TableRow>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0" />
+          </TableCell>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0">
+              <Span Background="LightGreen"><![CDATA[      <MultiProcessorCompilation>true</MultiProcessorCompilation>]]></Span>
+            </Paragraph>
+          </TableCell>
+        </TableRow>
+      </TableRowGroup>
+    </Table>
+    <Paragraph FontSize="20" FontWeight="Bold" Margin="12">
+      <Span><![CDATA[🡺 Project format version]]></Span>
+    </Paragraph>
+    <Table CellSpacing="0" BorderBrush="Gray" BorderThickness="0.5">
+      <Table.Columns>
+        <TableColumn />
+        <TableColumn />
+      </Table.Columns>
+      <TableRowGroup>
+        <TableRow Background="Orange">
+          <TableCell ColumnSpan="2" BorderThickness="0.5" BorderBrush="Gray">
+            <Paragraph Margin="10,5" FontWeight="Bold">
+              <Span><![CDATA[D:\WorkSpace\QtSpace\moonlight-qt\AntiHooking\AntiHooking.vcxproj]]></Span>
+            </Paragraph>
+          </TableCell>
+        </TableRow>
+        <TableRow>
+          <TableCell ColumnSpan="2" Background="WhiteSmoke" BorderBrush="Gray" BorderThickness="0.5" />
+        </TableRow>
+        <TableRow>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0">
+              <Span><![CDATA[    ]]></Span><Span Background="LightCoral"><![CDATA[<Keyword>Qt4VSv1.0</Keyword>]]></Span>
+            </Paragraph>
+          </TableCell>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0">
+              <Span><![CDATA[    ]]></Span><Span Background="LightGreen"><![CDATA[<Keyword>QtVS_v304</Keyword>]]></Span>
+            </Paragraph>
+          </TableCell>
+        </TableRow>
+      </TableRowGroup>
+    </Table>
+    <Paragraph FontSize="20" FontWeight="Bold" Margin="12">
+      <Span><![CDATA[🡺 Fallback for QTMSBUILD environment variable]]></Span>
+    </Paragraph>
+    <Table CellSpacing="0" BorderBrush="Gray" BorderThickness="0.5">
+      <Table.Columns>
+        <TableColumn />
+        <TableColumn />
+      </Table.Columns>
+      <TableRowGroup>
+        <TableRow Background="Orange">
+          <TableCell ColumnSpan="2" BorderThickness="0.5" BorderBrush="Gray">
+            <Paragraph Margin="10,5" FontWeight="Bold">
+              <Span><![CDATA[D:\WorkSpace\QtSpace\moonlight-qt\AntiHooking\AntiHooking.vcxproj]]></Span>
+            </Paragraph>
+          </TableCell>
+        </TableRow>
+        <TableRow>
+          <TableCell ColumnSpan="2" Background="WhiteSmoke" BorderBrush="Gray" BorderThickness="0.5" />
+        </TableRow>
+        <TableRow>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0" />
+          </TableCell>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0">
+              <Span Background="LightGreen"><![CDATA[    <QtMsBuild Condition="'$(QtMsBuild)'=='' OR !Exists('$(QtMsBuild)\qt.targets')">$(MSBuildProjectDirectory)\QtMsBuild</QtMsBuild>]]></Span>
+            </Paragraph>
+          </TableCell>
+        </TableRow>
+      </TableRowGroup>
+    </Table>
+    <Paragraph FontSize="20" FontWeight="Bold" Margin="12">
+      <Span><![CDATA[🡺 Default Qt properties]]></Span>
+    </Paragraph>
+    <Table CellSpacing="0" BorderBrush="Gray" BorderThickness="0.5">
+      <Table.Columns>
+        <TableColumn />
+        <TableColumn />
+      </Table.Columns>
+      <TableRowGroup>
+        <TableRow Background="Orange">
+          <TableCell ColumnSpan="2" BorderThickness="0.5" BorderBrush="Gray">
+            <Paragraph Margin="10,5" FontWeight="Bold">
+              <Span><![CDATA[D:\WorkSpace\QtSpace\moonlight-qt\AntiHooking\AntiHooking.vcxproj]]></Span>
+            </Paragraph>
+          </TableCell>
+        </TableRow>
+        <TableRow>
+          <TableCell ColumnSpan="2" Background="WhiteSmoke" BorderBrush="Gray" BorderThickness="0.5" />
+        </TableRow>
+        <TableRow>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0" />
+          </TableCell>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0">
+              <Span Background="LightGreen"><![CDATA[  <Import Project="$(QtMsBuild)\qt_defaults.props" Condition="Exists('$(QtMsBuild)\qt_defaults.props')" />]]></Span>
+            </Paragraph>
+          </TableCell>
+        </TableRow>
+      </TableRowGroup>
+    </Table>
+    <Paragraph FontSize="20" FontWeight="Bold" Margin="12">
+      <Span><![CDATA[🡺 Qt build settings]]></Span>
+    </Paragraph>
+    <Table CellSpacing="0" BorderBrush="Gray" BorderThickness="0.5">
+      <Table.Columns>
+        <TableColumn />
+        <TableColumn />
+      </Table.Columns>
+      <TableRowGroup>
+        <TableRow Background="Orange">
+          <TableCell ColumnSpan="2" BorderThickness="0.5" BorderBrush="Gray">
+            <Paragraph Margin="10,5" FontWeight="Bold">
+              <Span><![CDATA[D:\WorkSpace\QtSpace\moonlight-qt\AntiHooking\AntiHooking.vcxproj]]></Span>
+            </Paragraph>
+          </TableCell>
+        </TableRow>
+        <TableRow>
+          <TableCell ColumnSpan="2" Background="WhiteSmoke" BorderBrush="Gray" BorderThickness="0.5" />
+        </TableRow>
+        <TableRow>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0" />
+          </TableCell>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0">
+              <Span Background="LightGreen"><![CDATA[  <PropertyGroup Label="QtSettings" Condition="'$(Configuration)|$(Platform)'=='Release|x64'" />]]></Span>
+            </Paragraph>
+          </TableCell>
+        </TableRow>
+        <TableRow>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0" />
+          </TableCell>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0">
+              <Span Background="LightGreen"><![CDATA[  <PropertyGroup Label="QtSettings" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" />]]></Span>
+            </Paragraph>
+          </TableCell>
+        </TableRow>
+      </TableRowGroup>
+    </Table>
+    <Paragraph FontSize="20" FontWeight="Bold" Margin="12">
+      <Span><![CDATA[🡺 Warn if Qt/MSBuild is not found]]></Span>
+    </Paragraph>
+    <Table CellSpacing="0" BorderBrush="Gray" BorderThickness="0.5">
+      <Table.Columns>
+        <TableColumn />
+        <TableColumn />
+      </Table.Columns>
+      <TableRowGroup>
+        <TableRow Background="Orange">
+          <TableCell ColumnSpan="2" BorderThickness="0.5" BorderBrush="Gray">
+            <Paragraph Margin="10,5" FontWeight="Bold">
+              <Span><![CDATA[D:\WorkSpace\QtSpace\moonlight-qt\AntiHooking\AntiHooking.vcxproj]]></Span>
+            </Paragraph>
+          </TableCell>
+        </TableRow>
+        <TableRow>
+          <TableCell ColumnSpan="2" Background="WhiteSmoke" BorderBrush="Gray" BorderThickness="0.5" />
+        </TableRow>
+        <TableRow>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0" />
+          </TableCell>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0">
+              <Span Background="LightGreen"><![CDATA[  <Target Name="QtMsBuildNotFound" BeforeTargets="CustomBuild;ClCompile" Condition="!Exists('$(QtMsBuild)\qt.targets') OR !Exists('$(QtMsBuild)\Qt.props')">]]></Span>
+            </Paragraph>
+          </TableCell>
+        </TableRow>
+        <TableRow>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0" />
+          </TableCell>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0">
+              <Span Background="LightGreen"><![CDATA[    <Message Importance="High" Text="QtMsBuild: could not locate qt.targets, qt.props; project may not build correctly." />]]></Span>
+            </Paragraph>
+          </TableCell>
+        </TableRow>
+        <TableRow>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0" />
+          </TableCell>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0">
+              <Span Background="LightGreen"><![CDATA[  </Target>]]></Span>
+            </Paragraph>
+          </TableCell>
+        </TableRow>
+      </TableRowGroup>
+    </Table>
+    <Paragraph FontSize="20" FontWeight="Bold" Margin="12">
+      <Span><![CDATA[🡺 Qt property sheet]]></Span>
+    </Paragraph>
+    <Table CellSpacing="0" BorderBrush="Gray" BorderThickness="0.5">
+      <Table.Columns>
+        <TableColumn />
+        <TableColumn />
+      </Table.Columns>
+      <TableRowGroup>
+        <TableRow Background="Orange">
+          <TableCell ColumnSpan="2" BorderThickness="0.5" BorderBrush="Gray">
+            <Paragraph Margin="10,5" FontWeight="Bold">
+              <Span><![CDATA[D:\WorkSpace\QtSpace\moonlight-qt\AntiHooking\AntiHooking.vcxproj]]></Span>
+            </Paragraph>
+          </TableCell>
+        </TableRow>
+        <TableRow>
+          <TableCell ColumnSpan="2" Background="WhiteSmoke" BorderBrush="Gray" BorderThickness="0.5" />
+        </TableRow>
+        <TableRow>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0" />
+          </TableCell>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0">
+              <Span Background="LightGreen"><![CDATA[    <Import Project="$(QtMsBuild)\Qt.props" />]]></Span>
+            </Paragraph>
+          </TableCell>
+        </TableRow>
+        <TableRow>
+          <TableCell ColumnSpan="2" Background="WhiteSmoke" BorderBrush="Gray" BorderThickness="0.5" />
+        </TableRow>
+        <TableRow>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0" />
+          </TableCell>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0">
+              <Span Background="LightGreen"><![CDATA[    <Import Project="$(QtMsBuild)\Qt.props" />]]></Span>
+            </Paragraph>
+          </TableCell>
+        </TableRow>
+      </TableRowGroup>
+    </Table>
+    <Paragraph FontSize="20" FontWeight="Bold" Margin="12">
+      <Span><![CDATA[🡺 Qt targets]]></Span>
+    </Paragraph>
+    <Table CellSpacing="0" BorderBrush="Gray" BorderThickness="0.5">
+      <Table.Columns>
+        <TableColumn />
+        <TableColumn />
+      </Table.Columns>
+      <TableRowGroup>
+        <TableRow Background="Orange">
+          <TableCell ColumnSpan="2" BorderThickness="0.5" BorderBrush="Gray">
+            <Paragraph Margin="10,5" FontWeight="Bold">
+              <Span><![CDATA[D:\WorkSpace\QtSpace\moonlight-qt\AntiHooking\AntiHooking.vcxproj]]></Span>
+            </Paragraph>
+          </TableCell>
+        </TableRow>
+        <TableRow>
+          <TableCell ColumnSpan="2" Background="WhiteSmoke" BorderBrush="Gray" BorderThickness="0.5" />
+        </TableRow>
+        <TableRow>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0" />
+          </TableCell>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0">
+              <Span Background="LightGreen"><![CDATA[  <Import Project="$(QtMsBuild)\qt.targets" Condition="Exists('$(QtMsBuild)\qt.targets')" />]]></Span>
+            </Paragraph>
+          </TableCell>
+        </TableRow>
+      </TableRowGroup>
+    </Table>
+    <Paragraph FontSize="20" FontWeight="Bold" Margin="12">
+      <Span><![CDATA[🡺 Copying Qt build reference to QtInstall project property]]></Span>
+    </Paragraph>
+    <Table CellSpacing="0" BorderBrush="Gray" BorderThickness="0.5">
+      <Table.Columns>
+        <TableColumn />
+        <TableColumn />
+      </Table.Columns>
+      <TableRowGroup>
+        <TableRow Background="Orange">
+          <TableCell ColumnSpan="2" BorderThickness="0.5" BorderBrush="Gray">
+            <Paragraph Margin="10,5" FontWeight="Bold">
+              <Span><![CDATA[D:\WorkSpace\QtSpace\moonlight-qt\AntiHooking\AntiHooking.vcxproj]]></Span>
+            </Paragraph>
+          </TableCell>
+        </TableRow>
+        <TableRow>
+          <TableCell ColumnSpan="2" Background="WhiteSmoke" BorderBrush="Gray" BorderThickness="0.5" />
+        </TableRow>
+        <TableRow>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0">
+              <Span><![CDATA[  <PropertyGroup Label="QtSettings" Condition="'$(Configuration)|$(Platform)]]></Span><Span Background="LightCoral"><![CDATA['=='Release|x64'" />]]></Span>
+            </Paragraph>
+          </TableCell>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0">
+              <Span><![CDATA[  <PropertyGroup Label="QtSettings" Condition="'$(Configuration)|$(Platform)]]></Span><Span Background="LightGreen"><![CDATA['=='Release|x64'">]]></Span>
+            </Paragraph>
+          </TableCell>
+        </TableRow>
+        <TableRow>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0">
+              <Span><![CDATA[  ]]></Span><Span Background="LightCoral"><![CDATA[<PropertyGroup Label="QtSettings" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" />]]></Span>
+            </Paragraph>
+          </TableCell>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0">
+              <Span><![CDATA[    ]]></Span><Span Background="LightGreen"><![CDATA[<QtInstall>6.6.3_msvc2019_64</QtInstall>]]></Span>
+            </Paragraph>
+          </TableCell>
+        </TableRow>
+        <TableRow>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0" />
+          </TableCell>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0">
+              <Span Background="LightGreen"><![CDATA[  </PropertyGroup>]]></Span>
+            </Paragraph>
+          </TableCell>
+        </TableRow>
+        <TableRow>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0" />
+          </TableCell>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0">
+              <Span Background="LightGreen"><![CDATA[  <PropertyGroup Label="QtSettings" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">]]></Span>
+            </Paragraph>
+          </TableCell>
+        </TableRow>
+        <TableRow>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0" />
+          </TableCell>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0">
+              <Span Background="LightGreen"><![CDATA[    <QtInstall>6.6.3_msvc2019_64</QtInstall>]]></Span>
+            </Paragraph>
+          </TableCell>
+        </TableRow>
+        <TableRow>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0" />
+          </TableCell>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0">
+              <Span Background="LightGreen"><![CDATA[  </PropertyGroup>]]></Span>
+            </Paragraph>
+          </TableCell>
+        </TableRow>
+      </TableRowGroup>
+    </Table>
+    <Paragraph FontSize="20" FontWeight="Bold" Margin="12">
+      <Span><![CDATA[🡺 Removing Qt module include paths from compiler properties]]></Span>
+    </Paragraph>
+    <Table CellSpacing="0" BorderBrush="Gray" BorderThickness="0.5">
+      <Table.Columns>
+        <TableColumn />
+        <TableColumn />
+      </Table.Columns>
+      <TableRowGroup>
+        <TableRow Background="Orange">
+          <TableCell ColumnSpan="2" BorderThickness="0.5" BorderBrush="Gray">
+            <Paragraph Margin="10,5" FontWeight="Bold">
+              <Span><![CDATA[D:\WorkSpace\QtSpace\moonlight-qt\AntiHooking\AntiHooking.vcxproj]]></Span>
+            </Paragraph>
+          </TableCell>
+        </TableRow>
+        <TableRow>
+          <TableCell ColumnSpan="2" Background="WhiteSmoke" BorderBrush="Gray" BorderThickness="0.5" />
+        </TableRow>
+        <TableRow>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0">
+              <Span><![CDATA[      <AdditionalIncludeDirectories>GeneratedFiles\$(ConfigurationName);GeneratedFiles;.;..\libs\windows\include;]]></Span><Span Background="LightCoral"><![CDATA[$(QTDIR)\mkspecs\win32-msvc;]]></Span><Span><![CDATA[%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>]]></Span>
+            </Paragraph>
+          </TableCell>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0">
+              <Span><![CDATA[      <AdditionalIncludeDirectories>GeneratedFiles\$(ConfigurationName);GeneratedFiles;.;..\libs\windows\include;]]></Span><Span><![CDATA[%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>]]></Span>
+            </Paragraph>
+          </TableCell>
+        </TableRow>
+        <TableRow>
+          <TableCell ColumnSpan="2" Background="WhiteSmoke" BorderBrush="Gray" BorderThickness="0.5" />
+        </TableRow>
+        <TableRow>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0">
+              <Span><![CDATA[      <AdditionalIncludeDirectories>GeneratedFiles\$(ConfigurationName);GeneratedFiles;.;..\libs\windows\include;]]></Span><Span Background="LightCoral"><![CDATA[$(QTDIR)\mkspecs\win32-msvc;]]></Span><Span><![CDATA[%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>]]></Span>
+            </Paragraph>
+          </TableCell>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0">
+              <Span><![CDATA[      <AdditionalIncludeDirectories>GeneratedFiles\$(ConfigurationName);GeneratedFiles;.;..\libs\windows\include;]]></Span><Span><![CDATA[%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>]]></Span>
+            </Paragraph>
+          </TableCell>
+        </TableRow>
+      </TableRowGroup>
+    </Table>
+    <Paragraph FontSize="20" FontWeight="Bold" Margin="12">
+      <Span><![CDATA[🡺 Removing Qt lib path from linker properties]]></Span>
+    </Paragraph>
+    <Table CellSpacing="0" BorderBrush="Gray" BorderThickness="0.5">
+      <Table.Columns>
+        <TableColumn />
+        <TableColumn />
+      </Table.Columns>
+      <TableRowGroup>
+        <TableRow Background="Orange">
+          <TableCell ColumnSpan="2" BorderThickness="0.5" BorderBrush="Gray">
+            <Paragraph Margin="10,5" FontWeight="Bold">
+              <Span><![CDATA[D:\WorkSpace\QtSpace\moonlight-qt\AntiHooking\AntiHooking.vcxproj]]></Span>
+            </Paragraph>
+          </TableCell>
+        </TableRow>
+        <TableRow>
+          <TableCell ColumnSpan="2" Background="WhiteSmoke" BorderBrush="Gray" BorderThickness="0.5" />
+        </TableRow>
+        <TableRow>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0">
+              <Span><![CDATA[      ]]></Span><Span Background="LightCoral"><![CDATA[<AdditionalLibraryDirectories>$(QTDIR)\lib;D:\WorkSpace\QtSpace\moonlight-qt\libs\windows\lib\x64]]></Span><Span><![CDATA[;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>]]></Span>
+            </Paragraph>
+          </TableCell>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0">
+              <Span><![CDATA[      ]]></Span><Span Background="LightGreen"><![CDATA[<AdditionalLibraryDirectories>D:\WorkSpace\QtSpace\moonlight-qt\libs\windows\lib\x64]]></Span><Span><![CDATA[;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>]]></Span>
+            </Paragraph>
+          </TableCell>
+        </TableRow>
+        <TableRow>
+          <TableCell ColumnSpan="2" Background="WhiteSmoke" BorderBrush="Gray" BorderThickness="0.5" />
+        </TableRow>
+        <TableRow>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0">
+              <Span><![CDATA[      ]]></Span><Span Background="LightCoral"><![CDATA[<AdditionalLibraryDirectories>$(QTDIR)\lib;D:\WorkSpace\QtSpace\moonlight-qt\libs\windows\lib\x64]]></Span><Span><![CDATA[;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>]]></Span>
+            </Paragraph>
+          </TableCell>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0">
+              <Span><![CDATA[      ]]></Span><Span Background="LightGreen"><![CDATA[<AdditionalLibraryDirectories>D:\WorkSpace\QtSpace\moonlight-qt\libs\windows\lib\x64]]></Span><Span><![CDATA[;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>]]></Span>
+            </Paragraph>
+          </TableCell>
+        </TableRow>
+      </TableRowGroup>
+    </Table>
+    <Paragraph FontSize="20" FontWeight="Bold" Margin="12">
+      <Span><![CDATA[🡺 Adding Qt module names to QtModules project property]]></Span>
+    </Paragraph>
+    <Table CellSpacing="0" BorderBrush="Gray" BorderThickness="0.5">
+      <Table.Columns>
+        <TableColumn />
+        <TableColumn />
+      </Table.Columns>
+      <TableRowGroup>
+        <TableRow Background="Orange">
+          <TableCell ColumnSpan="2" BorderThickness="0.5" BorderBrush="Gray">
+            <Paragraph Margin="10,5" FontWeight="Bold">
+              <Span><![CDATA[D:\WorkSpace\QtSpace\moonlight-qt\AntiHooking\AntiHooking.vcxproj]]></Span>
+            </Paragraph>
+          </TableCell>
+        </TableRow>
+        <TableRow>
+          <TableCell ColumnSpan="2" Background="WhiteSmoke" BorderBrush="Gray" BorderThickness="0.5" />
+        </TableRow>
+        <TableRow>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0" />
+          </TableCell>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0">
+              <Span Background="LightGreen"><![CDATA[    <QtModules></QtModules>]]></Span>
+            </Paragraph>
+          </TableCell>
+        </TableRow>
+        <TableRow>
+          <TableCell ColumnSpan="2" Background="WhiteSmoke" BorderBrush="Gray" BorderThickness="0.5" />
+        </TableRow>
+        <TableRow>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0" />
+          </TableCell>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0">
+              <Span Background="LightGreen"><![CDATA[    <QtModules></QtModules>]]></Span>
+            </Paragraph>
+          </TableCell>
+        </TableRow>
+      </TableRowGroup>
+    </Table>
+  </Section>
+  <Section>
+    <Paragraph />
+  </Section>
+</FlowDocument>
+<!--7S3LCn24k33YbKxc1RfIQp03sS5Na6EIz4EZia7Q0jI=-->

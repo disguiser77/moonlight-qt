@@ -1,0 +1,50 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "moonlight-common-c", "D:/WorkSpace/QtSpace/moonlight-qt/moonlight-common-c\moonlight-common-c.vcxproj", "{159B6998-988B-3C8A-9383-564A82EA3ADD}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "qmdnsengine", "D:/WorkSpace/QtSpace/moonlight-qt/qmdnsengine\qmdnsengine.vcxproj", "{04E8D607-3896-31EB-B27A-540B78F64752}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Moonlight", "D:/WorkSpace/QtSpace/moonlight-qt/app\Moonlight.vcxproj", "{122EE33C-1D84-3C1E-8E60-75208AB04A3E}"
+	ProjectSection(ProjectDependencies) = postProject
+		{159B6998-988B-3C8A-9383-564A82EA3ADD} = {159B6998-988B-3C8A-9383-564A82EA3ADD}
+		{04E8D607-3896-31EB-B27A-540B78F64752} = {04E8D607-3896-31EB-B27A-540B78F64752}
+		{09F4340C-E913-3A2D-94D7-3CF9F6FF9102} = {09F4340C-E913-3A2D-94D7-3CF9F6FF9102}
+		{8F989F6F-CA1B-3AA9-96BA-DE41FAFE5B6F} = {8F989F6F-CA1B-3AA9-96BA-DE41FAFE5B6F}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "h264bitstream", "D:/WorkSpace/QtSpace/moonlight-qt/h264bitstream\h264bitstream.vcxproj", "{09F4340C-E913-3A2D-94D7-3CF9F6FF9102}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AntiHooking", "D:/WorkSpace/QtSpace/moonlight-qt/AntiHooking\AntiHooking.vcxproj", "{8F989F6F-CA1B-3AA9-96BA-DE41FAFE5B6F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{159B6998-988B-3C8A-9383-564A82EA3ADD}.Debug|x64.ActiveCfg = Debug|x64
+		{159B6998-988B-3C8A-9383-564A82EA3ADD}.Debug|x64.Build.0 = Debug|x64
+		{159B6998-988B-3C8A-9383-564A82EA3ADD}.Release|x64.ActiveCfg = Release|x64
+		{159B6998-988B-3C8A-9383-564A82EA3ADD}.Release|x64.Build.0 = Release|x64
+		{04E8D607-3896-31EB-B27A-540B78F64752}.Debug|x64.ActiveCfg = Debug|x64
+		{04E8D607-3896-31EB-B27A-540B78F64752}.Debug|x64.Build.0 = Debug|x64
+		{04E8D607-3896-31EB-B27A-540B78F64752}.Release|x64.ActiveCfg = Release|x64
+		{04E8D607-3896-31EB-B27A-540B78F64752}.Release|x64.Build.0 = Release|x64
+		{122EE33C-1D84-3C1E-8E60-75208AB04A3E}.Debug|x64.ActiveCfg = Debug|x64
+		{122EE33C-1D84-3C1E-8E60-75208AB04A3E}.Debug|x64.Build.0 = Debug|x64
+		{122EE33C-1D84-3C1E-8E60-75208AB04A3E}.Release|x64.ActiveCfg = Release|x64
+		{122EE33C-1D84-3C1E-8E60-75208AB04A3E}.Release|x64.Build.0 = Release|x64
+		{09F4340C-E913-3A2D-94D7-3CF9F6FF9102}.Debug|x64.ActiveCfg = Debug|x64
+		{09F4340C-E913-3A2D-94D7-3CF9F6FF9102}.Debug|x64.Build.0 = Debug|x64
+		{09F4340C-E913-3A2D-94D7-3CF9F6FF9102}.Release|x64.ActiveCfg = Release|x64
+		{09F4340C-E913-3A2D-94D7-3CF9F6FF9102}.Release|x64.Build.0 = Release|x64
+		{8F989F6F-CA1B-3AA9-96BA-DE41FAFE5B6F}.Debug|x64.ActiveCfg = Debug|x64
+		{8F989F6F-CA1B-3AA9-96BA-DE41FAFE5B6F}.Debug|x64.Build.0 = Debug|x64
+		{8F989F6F-CA1B-3AA9-96BA-DE41FAFE5B6F}.Release|x64.ActiveCfg = Release|x64
+		{8F989F6F-CA1B-3AA9-96BA-DE41FAFE5B6F}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

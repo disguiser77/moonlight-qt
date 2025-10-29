@@ -1,0 +1,657 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{122EE33C-1D84-3C1E-8E60-75208AB04A3E}</ProjectGuid>
+    <RootNamespace>Moonlight</RootNamespace>
+    <Keyword>QtVS_v304</Keyword>
+    <WindowsTargetPlatformVersion>10.0.22621.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformMinVersion>10.0.22621.0</WindowsTargetPlatformMinVersion>
+    <QtMsBuild Condition="'$(QtMsBuild)'=='' OR !Exists('$(QtMsBuild)\qt.targets')">$(MSBuildProjectDirectory)\QtMsBuild</QtMsBuild>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <PlatformToolset>v143</PlatformToolset>
+    <OutputDirectory>release\</OutputDirectory>
+    <ATLMinimizesCRunTimeLibraryUsage>false</ATLMinimizesCRunTimeLibraryUsage>
+    <CharacterSet>NotSet</CharacterSet>
+    <ConfigurationType>Application</ConfigurationType>
+    <IntermediateDirectory>release\</IntermediateDirectory>
+    <PrimaryOutput>Moonlight</PrimaryOutput>
+    <EmbedManifest>true</EmbedManifest>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <PlatformToolset>v143</PlatformToolset>
+    <OutputDirectory>debug\</OutputDirectory>
+    <ATLMinimizesCRunTimeLibraryUsage>false</ATLMinimizesCRunTimeLibraryUsage>
+    <CharacterSet>NotSet</CharacterSet>
+    <ConfigurationType>Application</ConfigurationType>
+    <IntermediateDirectory>debug\</IntermediateDirectory>
+    <PrimaryOutput>Moonlight</PrimaryOutput>
+    <EmbedManifest>true</EmbedManifest>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <Import Project="$(QtMsBuild)\qt_defaults.props" Condition="Exists('$(QtMsBuild)\qt_defaults.props')" />
+  <PropertyGroup Label="QtSettings" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <QtInstall>6.6.3_msvc2019_64</QtInstall>
+    <QtModules>core;gui;network;qml;quick;quickcontrols2;opengl;svg</QtModules>
+  </PropertyGroup>
+  <PropertyGroup Label="QtSettings" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <QtInstall>6.6.3_msvc2019_64</QtInstall>
+    <QtModules>core;gui;network;qml;quick;quickcontrols2;opengl;svg</QtModules>
+  </PropertyGroup>
+  <Target Name="QtMsBuildNotFound" BeforeTargets="CustomBuild;ClCompile" Condition="!Exists('$(QtMsBuild)\qt.targets') OR !Exists('$(QtMsBuild)\Qt.props')">
+    <Message Importance="High" Text="QtMsBuild: could not locate qt.targets, qt.props; project may not build correctly." />
+  </Target>
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" />
+    <Import Project="$(QtMsBuild)\Qt.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" />
+    <Import Project="$(QtMsBuild)\Qt.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.\bin\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Moonlight</TargetName>
+    <IgnoreImportLibrary Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</IgnoreImportLibrary>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.\bin\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Moonlight</TargetName>
+    <IgnoreImportLibrary Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</IgnoreImportLibrary>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>GeneratedFiles\$(ConfigurationName);GeneratedFiles;.;..\libs\windows\include\x64;..\libs\windows\include;..\moonlight-common-c\moonlight-common-c\src;..\qmdnsengine\qmdnsengine\src\include;..\qmdnsengine;..\h264bitstream\h264bitstream;..\AntiHooking;release;/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>-Zc:rvalueCast -Zc:inline -Zc:strictStrings -Zc:throwingNew -permissive- -Zc:__cplusplus -Zc:externConstexpr -guard:cf -guard:ehcont -utf-8 -w34100 -w34189 -w44996 -w44456 -w44457 -w44458 %(AdditionalOptions)</AdditionalOptions>
+      <AssemblerListingLocation>release\</AssemblerListingLocation>
+      <BrowseInformation>false</BrowseInformation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4577;4467;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <ObjectFileName>release\</ObjectFileName>
+      <Optimization>MaxSpeed</Optimization>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;_UNICODE;WIN32;_ENABLE_EXTENDED_ALIGNED_STORAGE;WIN64;NDEBUG;QT_DEPRECATED_WARNINGS;QT_DISABLE_DEPRECATED_BEFORE=0x060000;_USE_MATH_DEFINES;HAVE_FFMPEG;HAVE_LIBPLACEBO_VULKAN;HAVE_DISCORD;VERSION_STR="6.1.0";NDEBUG;QT_NO_DEBUG;QT_QMLMODELS_LIB;QT_QMLINTEGRATION_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessToFile>false</PreprocessToFile>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>ws2_32.lib;winmm.lib;dxva2.lib;ole32.lib;gdi32.lib;user32.lib;d3d9.lib;dwmapi.lib;dbghelp.lib;D:\WorkSpace\QtSpace\moonlight-qt\libs\windows\lib\x64\libssl.lib;D:\WorkSpace\QtSpace\moonlight-qt\libs\windows\lib\x64\libcrypto.lib;D:\WorkSpace\QtSpace\moonlight-qt\libs\windows\lib\x64\SDL2.lib;D:\WorkSpace\QtSpace\moonlight-qt\libs\windows\lib\x64\SDL2_ttf.lib;D:\WorkSpace\QtSpace\moonlight-qt\libs\windows\lib\x64\avcodec.lib;D:\WorkSpace\QtSpace\moonlight-qt\libs\windows\lib\x64\avutil.lib;D:\WorkSpace\QtSpace\moonlight-qt\libs\windows\lib\x64\swscale.lib;D:\WorkSpace\QtSpace\moonlight-qt\libs\windows\lib\x64\opus.lib;dxgi.lib;d3d11.lib;D:\WorkSpace\QtSpace\moonlight-qt\libs\windows\lib\x64\libplacebo.lib;D:\WorkSpace\QtSpace\moonlight-qt\libs\windows\lib\x64\discord-rpc.lib;moonlight-common-c.lib;qmdnsengine.lib;h264bitstream.lib;AntiHooking.lib;$(QTDIR)\lib\Qt6QmlModels.lib;$(QTDIR)\lib\Qt6EntryPoint.lib;shell32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>D:\WorkSpace\QtSpace\moonlight-qt\libs\windows\lib\x64;D:\WorkSpace\QtSpace\moonlight-qt\moonlight-common-c\bin\$(Platform)\$(Configuration);D:\WorkSpace\QtSpace\moonlight-qt\qmdnsengine\bin\$(Platform)\$(Configuration);D:\WorkSpace\QtSpace\moonlight-qt\h264bitstream\bin\$(Platform)\$(Configuration);D:\WorkSpace\QtSpace\moonlight-qt\AntiHooking\bin\$(Platform)\$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>-guard:cf -guard:ehcont -cetcompat /MANIFESTINPUT:./Moonlight.exe.manifest "/MANIFESTDEPENDENCY:type='win32' name='Microsoft.Windows.Common-Controls' version='6.0.0.0' publicKeyToken='6595b64144ccf1df' language='*' processorArchitecture='*'" %(AdditionalOptions)</AdditionalOptions>
+      <DataExecutionPrevention>true</DataExecutionPrevention>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <GenerateManifest>true</GenerateManifest>
+      <IgnoreImportLibrary>true</IgnoreImportLibrary>
+      <LinkIncremental>false</LinkIncremental>
+      <OptimizeReferences>true</OptimizeReferences>
+      <OutputFile>$(OutDir)\Moonlight.exe</OutputFile>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <SubSystem>Windows</SubSystem>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <Version>6.1</Version>
+    </Link>
+    <Midl>
+      <DefaultCharType>Unsigned</DefaultCharType>
+      <EnableErrorChecks>None</EnableErrorChecks>
+      <WarningLevel>0</WarningLevel>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;_UNICODE;WIN32;_ENABLE_EXTENDED_ALIGNED_STORAGE;WIN64;NDEBUG;QT_DEPRECATED_WARNINGS;QT_DISABLE_DEPRECATED_BEFORE=0x060000;_USE_MATH_DEFINES;HAVE_FFMPEG;HAVE_LIBPLACEBO_VULKAN;HAVE_DISCORD;VERSION_STR=\"6.1.0\";NDEBUG;QT_NO_DEBUG;QT_QMLMODELS_LIB;QT_QMLINTEGRATION_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <QtMoc>
+      <CompilerFlavor>msvc</CompilerFlavor>
+      <Include>./$(Configuration)/moc_predefs.h</Include>
+      <ExecutionDescription>Moc'ing %(Identity)...</ExecutionDescription>
+      <DynamicSource>output</DynamicSource>
+      <QtMocDir>$(Configuration)</QtMocDir>
+      <QtMocFileName>moc_%(Filename).cpp</QtMocFileName>
+    </QtMoc>
+    <QtRcc>
+      <Compression>default</Compression>
+      <NoZstd>true</NoZstd>
+      <ExecutionDescription>Rcc'ing %(Identity)...</ExecutionDescription>
+      <QtRccDir>$(Configuration)</QtRccDir>
+      <QtRccFileName>qrc_%(Filename).cpp</QtRccFileName>
+    </QtRcc>
+    <PostBuildEvent>
+      <Command>xcopy "$(ProjectDir)..\libs\windows\lib\x64\*.dll" ".\bin\$(Platform)\$(Configuration)\" /i /s /y
+xcopy "$(ProjectDir)..\AntiHooking\bin\$(Platform)\$(Configuration)\*.dll" ".\bin\$(Platform)\$(Configuration)\" /i /s /y</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>GeneratedFiles\$(ConfigurationName);GeneratedFiles;.;..\libs\windows\include\x64;..\libs\windows\include;..\moonlight-common-c\moonlight-common-c\src;..\qmdnsengine\qmdnsengine\src\include;..\qmdnsengine;..\h264bitstream\h264bitstream;..\AntiHooking;debug;/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>-Zc:rvalueCast -Zc:inline -Zc:strictStrings -Zc:throwingNew -permissive- -Zc:__cplusplus -Zc:externConstexpr -guard:cf -guard:ehcont -utf-8 -w34100 -w34189 -w44996 -w44456 -w44457 -w44458 %(AdditionalOptions)</AdditionalOptions>
+      <AssemblerListingLocation>debug\</AssemblerListingLocation>
+      <BrowseInformation>false</BrowseInformation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4577;4467;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <ObjectFileName>debug\</ObjectFileName>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;_UNICODE;WIN32;_ENABLE_EXTENDED_ALIGNED_STORAGE;WIN64;QT_DEPRECATED_WARNINGS;QT_DISABLE_DEPRECATED_BEFORE=0x060000;_USE_MATH_DEFINES;HAVE_FFMPEG;HAVE_LIBPLACEBO_VULKAN;HAVE_DISCORD;VERSION_STR="6.1.0";QT_QMLMODELS_LIB;QT_QMLINTEGRATION_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessToFile>false</PreprocessToFile>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>ws2_32.lib;winmm.lib;dxva2.lib;ole32.lib;gdi32.lib;user32.lib;d3d9.lib;dwmapi.lib;dbghelp.lib;D:\WorkSpace\QtSpace\moonlight-qt\libs\windows\lib\x64\libssl.lib;D:\WorkSpace\QtSpace\moonlight-qt\libs\windows\lib\x64\libcrypto.lib;D:\WorkSpace\QtSpace\moonlight-qt\libs\windows\lib\x64\SDL2.lib;D:\WorkSpace\QtSpace\moonlight-qt\libs\windows\lib\x64\SDL2_ttf.lib;D:\WorkSpace\QtSpace\moonlight-qt\libs\windows\lib\x64\avcodec.lib;D:\WorkSpace\QtSpace\moonlight-qt\libs\windows\lib\x64\avutil.lib;D:\WorkSpace\QtSpace\moonlight-qt\libs\windows\lib\x64\swscale.lib;D:\WorkSpace\QtSpace\moonlight-qt\libs\windows\lib\x64\opus.lib;dxgi.lib;d3d11.lib;D:\WorkSpace\QtSpace\moonlight-qt\libs\windows\lib\x64\libplacebo.lib;D:\WorkSpace\QtSpace\moonlight-qt\libs\windows\lib\x64\discord-rpc.lib;moonlight-common-c.lib;qmdnsengine.lib;h264bitstream.lib;AntiHooking.lib;$(QTDIR)\lib\Qt6QmlModelsd.lib;$(QTDIR)\lib\Qt6EntryPointd.lib;shell32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>D:\WorkSpace\QtSpace\moonlight-qt\libs\windows\lib\x64;D:\WorkSpace\QtSpace\moonlight-qt\moonlight-common-c\bin\$(Platform)\$(Configuration);D:\WorkSpace\QtSpace\moonlight-qt\qmdnsengine\bin\$(Platform)\$(Configuration);D:\WorkSpace\QtSpace\moonlight-qt\h264bitstream\bin\$(Platform)\$(Configuration);D:\WorkSpace\QtSpace\moonlight-qt\AntiHooking\bin\$(Platform)\$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>-guard:cf -guard:ehcont -cetcompat /MANIFESTINPUT:./Moonlight.exe.manifest "/MANIFESTDEPENDENCY:type='win32' name='Microsoft.Windows.Common-Controls' version='6.0.0.0' publicKeyToken='6595b64144ccf1df' language='*' processorArchitecture='*'" %(AdditionalOptions)</AdditionalOptions>
+      <DataExecutionPrevention>true</DataExecutionPrevention>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <GenerateManifest>true</GenerateManifest>
+      <IgnoreImportLibrary>true</IgnoreImportLibrary>
+      <OutputFile>$(OutDir)\Moonlight.exe</OutputFile>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <SubSystem>Windows</SubSystem>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <Version>6.1</Version>
+    </Link>
+    <Midl>
+      <DefaultCharType>Unsigned</DefaultCharType>
+      <EnableErrorChecks>None</EnableErrorChecks>
+      <WarningLevel>0</WarningLevel>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;_UNICODE;WIN32;_ENABLE_EXTENDED_ALIGNED_STORAGE;WIN64;QT_DEPRECATED_WARNINGS;QT_DISABLE_DEPRECATED_BEFORE=0x060000;_USE_MATH_DEFINES;HAVE_FFMPEG;HAVE_LIBPLACEBO_VULKAN;HAVE_DISCORD;VERSION_STR=\"6.1.0\";QT_QMLMODELS_LIB;QT_QMLINTEGRATION_LIB;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <QtMoc>
+      <CompilerFlavor>msvc</CompilerFlavor>
+      <Include>./$(Configuration)/moc_predefs.h</Include>
+      <ExecutionDescription>Moc'ing %(Identity)...</ExecutionDescription>
+      <DynamicSource>output</DynamicSource>
+      <QtMocDir>$(Configuration)</QtMocDir>
+      <QtMocFileName>moc_%(Filename).cpp</QtMocFileName>
+    </QtMoc>
+    <QtRcc>
+      <NoZstd>true</NoZstd>
+      <Compression>default</Compression>
+      <ExecutionDescription>Rcc'ing %(Identity)...</ExecutionDescription>
+      <QtRccDir>$(Configuration)</QtRccDir>
+      <QtRccFileName>qrc_%(Filename).cpp</QtRccFileName>
+    </QtRcc>
+    <PostBuildEvent>
+      <Command>xcopy "$(ProjectDir)..\libs\windows\lib\x64\*.dll" ".\bin\$(Platform)\$(Configuration)\" /i /s /y
+xcopy "$(ProjectDir)..\AntiHooking\bin\$(Platform)\$(Configuration)\*.dll" ".\bin\$(Platform)\$(Configuration)\" /i /s /y</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="streaming\input\abstouch.cpp" />
+    <ClCompile Include="gui\appmodel.cpp" />
+    <ClCompile Include="streaming\audio\audio.cpp" />
+    <ClCompile Include="backend\autoupdatechecker.cpp" />
+    <ClCompile Include="cli\commandlineparser.cpp" />
+    <ClCompile Include="settings\compatfetcher.cpp" />
+    <ClCompile Include="backend\computerseeker.cpp" />
+    <ClCompile Include="streaming\video\ffmpeg-renderers\d3d11va.cpp" />
+    <ClCompile Include="streaming\video\ffmpeg-renderers\dxva2.cpp" />
+    <ClCompile Include="streaming\video\ffmpeg-renderers\pacer\dxvsyncsource.cpp" />
+    <ClCompile Include="streaming\video\ffmpeg.cpp" />
+    <ClCompile Include="streaming\input\gamepad.cpp" />
+    <ClCompile Include="streaming\video\ffmpeg-renderers\genhwaccel.cpp" />
+    <ClCompile Include="backend\identitymanager.cpp" />
+    <ClCompile Include="streaming\input\input.cpp" />
+    <ClCompile Include="streaming\input\keyboard.cpp" />
+    <ClCompile Include="cli\listapps.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="settings\mappingfetcher.cpp" />
+    <ClCompile Include="settings\mappingmanager.cpp" />
+    <ClCompile Include="streaming\input\mouse.cpp" />
+    <ClCompile Include="backend\nvaddress.cpp" />
+    <ClCompile Include="backend\nvapp.cpp" />
+    <ClCompile Include="backend\nvcomputer.cpp" />
+    <ClCompile Include="backend\nvhttp.cpp" />
+    <ClCompile Include="backend\nvpairingmanager.cpp" />
+    <ClCompile Include="streaming\video\overlaymanager.cpp" />
+    <ClCompile Include="streaming\video\ffmpeg-renderers\pacer\pacer.cpp" />
+    <ClCompile Include="cli\pair.cpp" />
+    <ClCompile Include="path.cpp" />
+    <ClCompile Include="streaming\video\ffmpeg-renderers\plvk.cpp" />
+    <ClCompile Include="streaming\video\ffmpeg-renderers\plvk_c.c" />
+    <ClCompile Include="cli\quitstream.cpp" />
+    <ClCompile Include="streaming\input\reltouch.cpp" />
+    <ClCompile Include="backend\richpresencemanager.cpp" />
+    <ClCompile Include="streaming\audio\renderers\sdlaud.cpp" />
+    <ClCompile Include="gui\sdlgamepadkeynavigation.cpp" />
+    <ClCompile Include="streaming\video\ffmpeg-renderers\sdlvid.cpp" />
+    <ClCompile Include="streaming\session.cpp" />
+    <ClCompile Include="cli\startstream.cpp" />
+    <ClCompile Include="settings\streamingpreferences.cpp" />
+    <ClCompile Include="streaming\streamutils.cpp" />
+    <ClCompile Include="streaming\video\ffmpeg-renderers\swframemapper.cpp" />
+    <ClCompile Include="backend\systemproperties.cpp" />
+    <ClCompile Include="wm.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="SDL_compat.h" />
+    <QtMoc Include="gui\appmodel.h" />
+    <QtMoc Include="backend\autoupdatechecker.h" />
+    <QtMoc Include="backend\boxartmanager.h" />
+    <ClInclude Include="cli\commandlineparser.h" />
+    <QtMoc Include="settings\compatfetcher.h" />
+    <QtMoc Include="backend\computermanager.h" />
+    <QtMoc Include="gui\computermodel.h" />
+    <QtMoc Include="backend\computerseeker.h" />
+    <ClInclude Include="streaming\video\ffmpeg-renderers\d3d11va.h" />
+    <ClInclude Include="streaming\video\decoder.h" />
+    <ClInclude Include="streaming\video\ffmpeg-renderers\dxutil.h" />
+    <ClInclude Include="streaming\video\ffmpeg-renderers\dxva2.h" />
+    <ClInclude Include="streaming\video\ffmpeg-renderers\pacer\dxvsyncsource.h" />
+    <ClInclude Include="streaming\video\ffmpeg.h" />
+    <ClInclude Include="streaming\video\ffmpeg-renderers\genhwaccel.h" />
+    <ClInclude Include="backend\identitymanager.h" />
+    <ClInclude Include="streaming\input\input.h" />
+    <QtMoc Include="cli\listapps.h" />
+    <QtMoc Include="settings\mappingfetcher.h" />
+    <ClInclude Include="settings\mappingmanager.h" />
+    <ClInclude Include="backend\nvaddress.h" />
+    <ClInclude Include="backend\nvapp.h" />
+    <ClInclude Include="backend\nvcomputer.h" />
+    <QtMoc Include="backend\nvhttp.h" />
+    <ClInclude Include="backend\nvpairingmanager.h" />
+    <ClInclude Include="streaming\video\overlaymanager.h" />
+    <ClInclude Include="streaming\video\ffmpeg-renderers\pacer\pacer.h" />
+    <QtMoc Include="cli\pair.h" />
+    <ClInclude Include="path.h" />
+    <ClInclude Include="streaming\video\ffmpeg-renderers\plvk.h" />
+    <QtMoc Include="cli\quitstream.h" />
+    <ClInclude Include="streaming\audio\renderers\renderer.h" />
+    <ClInclude Include="streaming\video\ffmpeg-renderers\renderer.h" />
+    <ClInclude Include="backend\richpresencemanager.h" />
+    <ClInclude Include="streaming\audio\renderers\sdl.h" />
+    <QtMoc Include="gui\sdlgamepadkeynavigation.h" />
+    <ClInclude Include="streaming\video\ffmpeg-renderers\sdlvid.h" />
+    <QtMoc Include="streaming\session.h" />
+    <QtMoc Include="cli\startstream.h" />
+    <QtMoc Include="settings\streamingpreferences.h" />
+    <ClInclude Include="streaming\streamutils.h" />
+    <ClInclude Include="streaming\video\ffmpeg-renderers\swframemapper.h" />
+    <QtMoc Include="backend\systemproperties.h" />
+    <ClInclude Include="utils.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="backend\boxartmanager.cpp">
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Release|x64'">input</DynamicSource>
+      <Include Condition="'$(Configuration)|$(Platform)'=='Release|x64'">./$(IntDir)/moc_predefs.h</Include>
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">input</DynamicSource>
+      <Include Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">./$(IntDir)/moc_predefs.h</Include>
+      <QtMocDir>$(IntDir)</QtMocDir>
+      <QtMocFileName>%(Filename).moc</QtMocFileName>
+    </QtMoc>
+    <QtMoc Include="backend\computermanager.cpp">
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Release|x64'">input</DynamicSource>
+      <Include Condition="'$(Configuration)|$(Platform)'=='Release|x64'">./$(IntDir)/moc_predefs.h</Include>
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">input</DynamicSource>
+      <Include Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">./$(IntDir)/moc_predefs.h</Include>
+      <QtMocDir>$(IntDir)</QtMocDir>
+      <QtMocFileName>%(Filename).moc</QtMocFileName>
+    </QtMoc>
+    <QtMoc Include="gui\computermodel.cpp">
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Release|x64'">input</DynamicSource>
+      <Include Condition="'$(Configuration)|$(Platform)'=='Release|x64'">./$(IntDir)/moc_predefs.h</Include>
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">input</DynamicSource>
+      <Include Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">./$(IntDir)/moc_predefs.h</Include>
+      <QtMocDir>$(IntDir)</QtMocDir>
+      <QtMocFileName>%(Filename).moc</QtMocFileName>
+    </QtMoc>
+    <ClCompile Include="release\gui_AppView_qml.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="release\gui_AutoResizingComboBox_qml.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="release\gui_CenteredGridView_qml.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="release\gui_CliPair_qml.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="release\gui_CliQuitStreamSegue_qml.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="release\gui_CliStartStreamSegue_qml.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="release\gui_ErrorMessageDialog_qml.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="release\gui_GamepadMapper_qml.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="release\gui_NavigableDialog_qml.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="release\gui_NavigableItemDelegate_qml.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="release\gui_NavigableMenuItem_qml.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="release\gui_NavigableMenu_qml.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="release\gui_NavigableMessageDialog_qml.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="release\gui_NavigableToolButton_qml.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="release\gui_PcView_qml.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="release\gui_QuitSegue_qml.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="release\gui_SettingsView_qml.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="release\gui_StreamSegue_qml.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="release\gui_main_qml.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <CustomBuild Include="debug\moc_predefs.h.cbt">
+      <FileType>Document</FileType>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QTDIR)\mkspecs\features\data\dummy.cpp;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">cl -Bx"$(QTDIR)\bin\qmake.exe" -nologo -Zc:wchar_t -FS -Zc:rvalueCast -Zc:inline -Zc:strictStrings -Zc:throwingNew -permissive- -Zc:__cplusplus -Zc:externConstexpr -guard:cf -guard:ehcont -Zi -MDd -std:c++17 -utf-8 -W3 -w34100 -w34189 -w44996 -w44456 -w44457 -w44458 -wd4577 -wd4467 -E $(QTDIR)\mkspecs\features\data\dummy.cpp 2&gt;NUL &gt;$(IntDir)\moc_predefs.h</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generate moc_predefs.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)\moc_predefs.h;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="release\moc_predefs.h.cbt">
+      <FileType>Document</FileType>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\mkspecs\features\data\dummy.cpp;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">cl -Bx"$(QTDIR)\bin\qmake.exe" -nologo -Zc:wchar_t -FS -Zc:rvalueCast -Zc:inline -Zc:strictStrings -Zc:throwingNew -permissive- -Zc:__cplusplus -Zc:externConstexpr -guard:cf -guard:ehcont -O2 -Zi -MD -std:c++17 -utf-8 -W3 -w34100 -w34189 -w44996 -w44456 -w44457 -w44458 -wd4577 -wd4467 -E $(QTDIR)\mkspecs\features\data\dummy.cpp 2&gt;NUL &gt;$(IntDir)\moc_predefs.h</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generate moc_predefs.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)\moc_predefs.h;%(Outputs)</Outputs>
+    </CustomBuild>
+    <ClCompile Include="release\qmlcache_loader.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <CustomBuild Include="release\qmlcache_loader.cpp.cbt">
+      <FileType>Document</FileType>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">qml.qrc;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\bin\qmlcachegen.exe --resource-file-mapping="./qml.qrc=./qml_qmlcache.qrc" -o release\qmlcache_loader.cpp qml.qrc</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">qmlcachengen_loader release/qmlcache_loader.cpp</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">release\qmlcache_loader.cpp;%(Outputs)</Outputs>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="languages\qml_bg.ts" />
+    <None Include="languages\qml_ckb.ts" />
+    <None Include="languages\qml_cs.ts" />
+    <None Include="languages\qml_de.ts" />
+    <None Include="languages\qml_el.ts" />
+    <None Include="languages\qml_eo.ts" />
+    <None Include="languages\qml_es.ts" />
+    <None Include="languages\qml_et.ts" />
+    <None Include="languages\qml_fr.ts" />
+    <None Include="languages\qml_he.ts" />
+    <None Include="languages\qml_hi.ts" />
+    <None Include="languages\qml_hu.ts" />
+    <None Include="languages\qml_it.ts" />
+    <None Include="languages\qml_ja.ts" />
+    <None Include="languages\qml_ko.ts" />
+    <None Include="languages\qml_lt.ts" />
+    <None Include="languages\qml_nb_NO.ts" />
+    <None Include="languages\qml_nl.ts" />
+    <None Include="languages\qml_pl.ts" />
+    <None Include="languages\qml_pt.ts" />
+    <None Include="languages\qml_pt_BR.ts" />
+    <None Include="languages\qml_ru.ts" />
+    <None Include="languages\qml_sv.ts" />
+    <None Include="languages\qml_ta.ts" />
+    <None Include="languages\qml_th.ts" />
+    <None Include="languages\qml_tr.ts" />
+    <None Include="languages\qml_uk.ts" />
+    <None Include="languages\qml_vi.ts" />
+    <None Include="languages\qml_zh_CN.ts" />
+    <None Include="languages\qml_zh_TW.ts" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="gui\AppView.qml">
+      <FileType>Document</FileType>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">gui\AppView.qml;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\bin\qmlcachegen.exe --resource=./qml.qrc -o release\gui_AppView_qml.cpp gui\AppView.qml</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">qmlcachegen gui/AppView.qml</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">release\gui_AppView_qml.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="gui\AutoResizingComboBox.qml">
+      <FileType>Document</FileType>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">gui\AutoResizingComboBox.qml;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\bin\qmlcachegen.exe --resource=./qml.qrc -o release\gui_AutoResizingComboBox_qml.cpp gui\AutoResizingComboBox.qml</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">qmlcachegen gui/AutoResizingComboBox.qml</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">release\gui_AutoResizingComboBox_qml.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="gui\CenteredGridView.qml">
+      <FileType>Document</FileType>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">gui\CenteredGridView.qml;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\bin\qmlcachegen.exe --resource=./qml.qrc -o release\gui_CenteredGridView_qml.cpp gui\CenteredGridView.qml</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">qmlcachegen gui/CenteredGridView.qml</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">release\gui_CenteredGridView_qml.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="gui\CliPair.qml">
+      <FileType>Document</FileType>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">gui\CliPair.qml;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\bin\qmlcachegen.exe --resource=./qml.qrc -o release\gui_CliPair_qml.cpp gui\CliPair.qml</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">qmlcachegen gui/CliPair.qml</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">release\gui_CliPair_qml.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="gui\CliQuitStreamSegue.qml">
+      <FileType>Document</FileType>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">gui\CliQuitStreamSegue.qml;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\bin\qmlcachegen.exe --resource=./qml.qrc -o release\gui_CliQuitStreamSegue_qml.cpp gui\CliQuitStreamSegue.qml</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">qmlcachegen gui/CliQuitStreamSegue.qml</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">release\gui_CliQuitStreamSegue_qml.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="gui\CliStartStreamSegue.qml">
+      <FileType>Document</FileType>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">gui\CliStartStreamSegue.qml;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\bin\qmlcachegen.exe --resource=./qml.qrc -o release\gui_CliStartStreamSegue_qml.cpp gui\CliStartStreamSegue.qml</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">qmlcachegen gui/CliStartStreamSegue.qml</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">release\gui_CliStartStreamSegue_qml.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="gui\ErrorMessageDialog.qml">
+      <FileType>Document</FileType>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">gui\ErrorMessageDialog.qml;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\bin\qmlcachegen.exe --resource=./qml.qrc -o release\gui_ErrorMessageDialog_qml.cpp gui\ErrorMessageDialog.qml</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">qmlcachegen gui/ErrorMessageDialog.qml</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">release\gui_ErrorMessageDialog_qml.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="gui\GamepadMapper.qml">
+      <FileType>Document</FileType>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">gui\GamepadMapper.qml;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\bin\qmlcachegen.exe --resource=./qml.qrc -o release\gui_GamepadMapper_qml.cpp gui\GamepadMapper.qml</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">qmlcachegen gui/GamepadMapper.qml</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">release\gui_GamepadMapper_qml.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <None Include="ModeSeven.ttf" />
+    <CustomBuild Include="gui\NavigableDialog.qml">
+      <FileType>Document</FileType>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">gui\NavigableDialog.qml;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\bin\qmlcachegen.exe --resource=./qml.qrc -o release\gui_NavigableDialog_qml.cpp gui\NavigableDialog.qml</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">qmlcachegen gui/NavigableDialog.qml</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">release\gui_NavigableDialog_qml.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="gui\NavigableItemDelegate.qml">
+      <FileType>Document</FileType>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">gui\NavigableItemDelegate.qml;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\bin\qmlcachegen.exe --resource=./qml.qrc -o release\gui_NavigableItemDelegate_qml.cpp gui\NavigableItemDelegate.qml</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">qmlcachegen gui/NavigableItemDelegate.qml</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">release\gui_NavigableItemDelegate_qml.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="gui\NavigableMenu.qml">
+      <FileType>Document</FileType>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">gui\NavigableMenu.qml;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\bin\qmlcachegen.exe --resource=./qml.qrc -o release\gui_NavigableMenu_qml.cpp gui\NavigableMenu.qml</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">qmlcachegen gui/NavigableMenu.qml</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">release\gui_NavigableMenu_qml.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="gui\NavigableMenuItem.qml">
+      <FileType>Document</FileType>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">gui\NavigableMenuItem.qml;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\bin\qmlcachegen.exe --resource=./qml.qrc -o release\gui_NavigableMenuItem_qml.cpp gui\NavigableMenuItem.qml</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">qmlcachegen gui/NavigableMenuItem.qml</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">release\gui_NavigableMenuItem_qml.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="gui\NavigableMessageDialog.qml">
+      <FileType>Document</FileType>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">gui\NavigableMessageDialog.qml;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\bin\qmlcachegen.exe --resource=./qml.qrc -o release\gui_NavigableMessageDialog_qml.cpp gui\NavigableMessageDialog.qml</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">qmlcachegen gui/NavigableMessageDialog.qml</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">release\gui_NavigableMessageDialog_qml.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="gui\NavigableToolButton.qml">
+      <FileType>Document</FileType>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">gui\NavigableToolButton.qml;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\bin\qmlcachegen.exe --resource=./qml.qrc -o release\gui_NavigableToolButton_qml.cpp gui\NavigableToolButton.qml</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">qmlcachegen gui/NavigableToolButton.qml</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">release\gui_NavigableToolButton_qml.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="gui\PcView.qml">
+      <FileType>Document</FileType>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">gui\PcView.qml;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\bin\qmlcachegen.exe --resource=./qml.qrc -o release\gui_PcView_qml.cpp gui\PcView.qml</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">qmlcachegen gui/PcView.qml</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">release\gui_PcView_qml.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="gui\QuitSegue.qml">
+      <FileType>Document</FileType>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">gui\QuitSegue.qml;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\bin\qmlcachegen.exe --resource=./qml.qrc -o release\gui_QuitSegue_qml.cpp gui\QuitSegue.qml</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">qmlcachegen gui/QuitSegue.qml</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">release\gui_QuitSegue_qml.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="gui\SettingsView.qml">
+      <FileType>Document</FileType>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">gui\SettingsView.qml;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\bin\qmlcachegen.exe --resource=./qml.qrc -o release\gui_SettingsView_qml.cpp gui\SettingsView.qml</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">qmlcachegen gui/SettingsView.qml</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">release\gui_SettingsView_qml.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="gui\StreamSegue.qml">
+      <FileType>Document</FileType>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">gui\StreamSegue.qml;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\bin\qmlcachegen.exe --resource=./qml.qrc -o release\gui_StreamSegue_qml.cpp gui\StreamSegue.qml</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">qmlcachegen gui/StreamSegue.qml</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">release\gui_StreamSegue_qml.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <None Include="res\arrow_left.svg" />
+    <None Include="res\baseline-check_circle_outline-24px.svg" />
+    <None Include="res\baseline-error_outline-24px.svg" />
+    <None Include="res\baseline-help_outline-24px.svg" />
+    <None Include="res\baseline-lock-24px.svg" />
+    <None Include="res\baseline-warning-24px.svg" />
+    <None Include="shaders\d3d11_ayuv_pixel.fxc" />
+    <None Include="shaders\d3d11_bt2020lim_pixel.fxc" />
+    <None Include="shaders\d3d11_bt601lim_pixel.fxc" />
+    <None Include="shaders\d3d11_genyuv_pixel.fxc" />
+    <None Include="shaders\d3d11_overlay_pixel.fxc" />
+    <None Include="shaders\d3d11_vertex.fxc" />
+    <None Include="shaders\d3d11_y410_pixel.fxc" />
+    <None Include="res\desktop_windows-48px.svg" />
+    <None Include="res\discord.svg" />
+    <None Include="shaders\egl_nv12.frag" />
+    <None Include="shaders\egl_nv12.vert" />
+    <None Include="shaders\egl_opaque.frag" />
+    <None Include="shaders\egl_opaque.vert" />
+    <None Include="shaders\egl_overlay.frag" />
+    <None Include="shaders\egl_overlay.vert" />
+    <None Include="SDL_GameControllerDB\gamecontrollerdb.txt" />
+    <None Include="res\ic_add_to_queue_white_48px.svg" />
+    <None Include="res\ic_videogame_asset_white_48px.svg" />
+    <CustomBuild Include="gui\main.qml">
+      <FileType>Document</FileType>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">gui\main.qml;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\bin\qmlcachegen.exe --resource=./qml.qrc -o release\gui_main_qml.cpp gui\main.qml</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">qmlcachegen gui/main.qml</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">release\gui_main_qml.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <None Include="res\moonlight.svg" />
+    <None Include="res\no_app_image.png" />
+    <None Include="res\play_arrow_FILL1_wght700_GRAD200_opsz48.svg" />
+    <QtRcc Include="qml.qrc">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <InitFuncName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">qml</InitFuncName>
+    </QtRcc>
+    <None Include="languages\qml_bg.qm" />
+    <None Include="languages\qml_ckb.qm" />
+    <None Include="languages\qml_cs.qm" />
+    <None Include="languages\qml_de.qm" />
+    <None Include="languages\qml_el.qm" />
+    <None Include="languages\qml_eo.qm" />
+    <None Include="languages\qml_es.qm" />
+    <None Include="languages\qml_et.qm" />
+    <None Include="languages\qml_fr.qm" />
+    <None Include="languages\qml_he.qm" />
+    <None Include="languages\qml_hi.qm" />
+    <None Include="languages\qml_hu.qm" />
+    <None Include="languages\qml_it.qm" />
+    <None Include="languages\qml_ja.qm" />
+    <None Include="languages\qml_ko.qm" />
+    <None Include="languages\qml_lt.qm" />
+    <None Include="languages\qml_nb_NO.qm" />
+    <None Include="languages\qml_nl.qm" />
+    <None Include="languages\qml_pl.qm" />
+    <None Include="languages\qml_pt.qm" />
+    <QtRcc Include="qml_qmlcache.qrc">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+      <InitFuncName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">qml_qmlcache</InitFuncName>
+    </QtRcc>
+    <None Include="languages\qml_ru.qm" />
+    <None Include="languages\qml_sv.qm" />
+    <None Include="languages\qml_ta.qm" />
+    <None Include="languages\qml_th.qm" />
+    <None Include="languages\qml_tr.qm" />
+    <None Include="languages\qml_uk.qm" />
+    <None Include="languages\qml_vi.qm" />
+    <None Include="languages\qml_zh_CN.qm" />
+    <None Include="languages\qml_zh_TW.qm" />
+    <None Include="res\question_mark.svg" />
+    <QtRcc Include="resources.qrc">
+      <InitFuncName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">resources</InitFuncName>
+      <InitFuncName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">resources</InitFuncName>
+    </QtRcc>
+    <None Include="res\settings.svg" />
+    <None Include="res\stop_FILL1_wght700_GRAD200_opsz48.svg" />
+    <None Include="res\update.svg" />
+    <None Include="shaders\vt_renderer.metal" />
+    <None Include="res\warning_FILL1_wght300_GRAD200_opsz24.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include=".\Moonlight_resource.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <Import Project="$(QtMsBuild)\qt.targets" Condition="Exists('$(QtMsBuild)\qt.targets')" />
+  <ImportGroup Label="ExtensionTargets" />
+</Project>

@@ -1,0 +1,167 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;moc;h;def;odl;idl;res;</Extensions>
+    </Filter>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;moc;h;def;odl;idl;res;</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="qmdnsengine\src\src\abstractserver.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qmdnsengine\src\src\bitmap.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qmdnsengine\src\src\browser.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qmdnsengine\src\src\cache.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qmdnsengine\src\src\dns.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qmdnsengine\src\src\hostname.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qmdnsengine\src\src\mdns.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qmdnsengine\src\src\message.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qmdnsengine\src\src\prober.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qmdnsengine\src\src\provider.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qmdnsengine\src\src\query.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qmdnsengine\src\src\record.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qmdnsengine\src\src\resolver.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qmdnsengine\src\src\server.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qmdnsengine\src\src\service.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="qmdnsengine\src\include\qmdnsengine\abstractserver.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClInclude Include="qmdnsengine\src\include\qmdnsengine\bitmap.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="qmdnsengine\src\src\bitmap_p.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <QtMoc Include="qmdnsengine\src\include\qmdnsengine\browser.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="qmdnsengine\src\src\browser_p.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="qmdnsengine\src\include\qmdnsengine\cache.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="qmdnsengine\src\src\cache_p.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClInclude Include="qmdnsengine\src\include\qmdnsengine\dns.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <QtMoc Include="qmdnsengine\src\include\qmdnsengine\hostname.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="qmdnsengine\src\src\hostname_p.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClInclude Include="qmdnsengine\src\include\qmdnsengine\mdns.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="qmdnsengine\src\include\qmdnsengine\message.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="qmdnsengine\src\src\message_p.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <QtMoc Include="qmdnsengine\src\include\qmdnsengine\prober.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="qmdnsengine\src\src\prober_p.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="qmdnsengine\src\include\qmdnsengine\provider.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="qmdnsengine\src\src\provider_p.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClInclude Include="qmdnsengine\src\include\qmdnsengine\query.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="qmdnsengine\src\src\query_p.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="qmdnsengine\src\include\qmdnsengine\record.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="qmdnsengine\src\src\record_p.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <QtMoc Include="qmdnsengine\src\include\qmdnsengine\resolver.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="qmdnsengine\src\src\resolver_p.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="qmdnsengine\src\include\qmdnsengine\server.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="qmdnsengine\src\src\server_p.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClInclude Include="qmdnsengine\src\include\qmdnsengine\service.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="qmdnsengine\src\src\service_p.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="debug\moc_predefs.h.cbt">
+      <Filter>Generated Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="release\moc_predefs.h.cbt">
+      <Filter>Generated Files</Filter>
+    </CustomBuild>
+  </ItemGroup>
+</Project>

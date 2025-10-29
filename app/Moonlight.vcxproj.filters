@@ -1,0 +1,842 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;moc;h;def;odl;idl;res;</Extensions>
+    </Filter>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;moc;h;def;odl;idl;res;</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
+      <Extensions>qrc;*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
+      <Extensions>qrc;*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Translation Files">
+      <UniqueIdentifier>{639EADAA-A684-42e4-A9AD-28FC9BCB8F7C}</UniqueIdentifier>
+      <Extensions>ts;xlf</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Translation Files">
+      <UniqueIdentifier>{639EADAA-A684-42e4-A9AD-28FC9BCB8F7C}</UniqueIdentifier>
+      <Extensions>ts;xlf</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="streaming\input\abstouch.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="gui\appmodel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="streaming\audio\audio.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="backend\autoupdatechecker.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <QtMoc Include="backend\boxartmanager.cpp">
+      <Filter>Source Files</Filter>
+    </QtMoc>
+    <ClCompile Include="cli\commandlineparser.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="settings\compatfetcher.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <QtMoc Include="backend\computermanager.cpp">
+      <Filter>Source Files</Filter>
+    </QtMoc>
+    <QtMoc Include="gui\computermodel.cpp">
+      <Filter>Source Files</Filter>
+    </QtMoc>
+    <ClCompile Include="backend\computerseeker.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="streaming\video\ffmpeg-renderers\d3d11va.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="streaming\video\ffmpeg-renderers\dxva2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="streaming\video\ffmpeg-renderers\pacer\dxvsyncsource.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="streaming\video\ffmpeg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="streaming\input\gamepad.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="streaming\video\ffmpeg-renderers\genhwaccel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="backend\identitymanager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="streaming\input\input.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="streaming\input\keyboard.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="cli\listapps.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="settings\mappingfetcher.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="settings\mappingmanager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="streaming\input\mouse.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="backend\nvaddress.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="backend\nvapp.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="backend\nvcomputer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="backend\nvhttp.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="backend\nvpairingmanager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="streaming\video\overlaymanager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="streaming\video\ffmpeg-renderers\pacer\pacer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="cli\pair.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="path.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="streaming\video\ffmpeg-renderers\plvk.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="streaming\video\ffmpeg-renderers\plvk_c.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="cli\quitstream.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="streaming\input\reltouch.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="backend\richpresencemanager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="streaming\audio\renderers\sdlaud.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="gui\sdlgamepadkeynavigation.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="streaming\video\ffmpeg-renderers\sdlvid.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="streaming\session.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="cli\startstream.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="settings\streamingpreferences.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="streaming\streamutils.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="streaming\video\ffmpeg-renderers\swframemapper.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="backend\systemproperties.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="wm.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="SDL_compat.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <QtMoc Include="gui\appmodel.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="backend\autoupdatechecker.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="backend\boxartmanager.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClInclude Include="cli\commandlineparser.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <QtMoc Include="settings\compatfetcher.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="backend\computermanager.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="gui\computermodel.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="backend\computerseeker.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClInclude Include="streaming\video\ffmpeg-renderers\d3d11va.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="streaming\video\decoder.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="streaming\video\ffmpeg-renderers\dxutil.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="streaming\video\ffmpeg-renderers\dxva2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="streaming\video\ffmpeg-renderers\pacer\dxvsyncsource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="streaming\video\ffmpeg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="streaming\video\ffmpeg-renderers\genhwaccel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="backend\identitymanager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="streaming\input\input.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <QtMoc Include="cli\listapps.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="settings\mappingfetcher.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClInclude Include="settings\mappingmanager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="backend\nvaddress.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="backend\nvapp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="backend\nvcomputer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <QtMoc Include="backend\nvhttp.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClInclude Include="backend\nvpairingmanager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="streaming\video\overlaymanager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="streaming\video\ffmpeg-renderers\pacer\pacer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <QtMoc Include="cli\pair.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClInclude Include="path.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="streaming\video\ffmpeg-renderers\plvk.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <QtMoc Include="cli\quitstream.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClInclude Include="streaming\audio\renderers\renderer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="streaming\video\ffmpeg-renderers\renderer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="backend\richpresencemanager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="streaming\audio\renderers\sdl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <QtMoc Include="gui\sdlgamepadkeynavigation.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClInclude Include="streaming\video\ffmpeg-renderers\sdlvid.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <QtMoc Include="streaming\session.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="cli\startstream.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="settings\streamingpreferences.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClInclude Include="streaming\streamutils.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="streaming\video\ffmpeg-renderers\swframemapper.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <QtMoc Include="backend\systemproperties.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClInclude Include="utils.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="release\gui_AppView_qml.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="release\gui_AutoResizingComboBox_qml.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="release\gui_CenteredGridView_qml.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="release\gui_CliPair_qml.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="release\gui_CliQuitStreamSegue_qml.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="release\gui_CliStartStreamSegue_qml.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="release\gui_ErrorMessageDialog_qml.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="release\gui_GamepadMapper_qml.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="release\gui_NavigableDialog_qml.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="release\gui_NavigableItemDelegate_qml.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="release\gui_NavigableMenuItem_qml.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="release\gui_NavigableMenu_qml.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="release\gui_NavigableMessageDialog_qml.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="release\gui_NavigableToolButton_qml.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="release\gui_PcView_qml.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="release\gui_QuitSegue_qml.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="release\gui_SettingsView_qml.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="release\gui_StreamSegue_qml.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="release\gui_main_qml.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <CustomBuild Include="debug\moc_predefs.h.cbt">
+      <Filter>Generated Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="release\moc_predefs.h.cbt">
+      <Filter>Generated Files</Filter>
+    </CustomBuild>
+    <ClCompile Include="release\qmlcache_loader.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <CustomBuild Include="release\qmlcache_loader.cpp.cbt">
+      <Filter>Generated Files</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="languages\qml_bg.ts">
+      <Filter>Translation Files</Filter>
+    </None>
+    <None Include="languages\qml_ckb.ts">
+      <Filter>Translation Files</Filter>
+    </None>
+    <None Include="languages\qml_cs.ts">
+      <Filter>Translation Files</Filter>
+    </None>
+    <None Include="languages\qml_de.ts">
+      <Filter>Translation Files</Filter>
+    </None>
+    <None Include="languages\qml_el.ts">
+      <Filter>Translation Files</Filter>
+    </None>
+    <None Include="languages\qml_eo.ts">
+      <Filter>Translation Files</Filter>
+    </None>
+    <None Include="languages\qml_es.ts">
+      <Filter>Translation Files</Filter>
+    </None>
+    <None Include="languages\qml_et.ts">
+      <Filter>Translation Files</Filter>
+    </None>
+    <None Include="languages\qml_fr.ts">
+      <Filter>Translation Files</Filter>
+    </None>
+    <None Include="languages\qml_he.ts">
+      <Filter>Translation Files</Filter>
+    </None>
+    <None Include="languages\qml_hi.ts">
+      <Filter>Translation Files</Filter>
+    </None>
+    <None Include="languages\qml_hu.ts">
+      <Filter>Translation Files</Filter>
+    </None>
+    <None Include="languages\qml_it.ts">
+      <Filter>Translation Files</Filter>
+    </None>
+    <None Include="languages\qml_ja.ts">
+      <Filter>Translation Files</Filter>
+    </None>
+    <None Include="languages\qml_ko.ts">
+      <Filter>Translation Files</Filter>
+    </None>
+    <None Include="languages\qml_lt.ts">
+      <Filter>Translation Files</Filter>
+    </None>
+    <None Include="languages\qml_nb_NO.ts">
+      <Filter>Translation Files</Filter>
+    </None>
+    <None Include="languages\qml_nl.ts">
+      <Filter>Translation Files</Filter>
+    </None>
+    <None Include="languages\qml_pl.ts">
+      <Filter>Translation Files</Filter>
+    </None>
+    <None Include="languages\qml_pt.ts">
+      <Filter>Translation Files</Filter>
+    </None>
+    <None Include="languages\qml_pt_BR.ts">
+      <Filter>Translation Files</Filter>
+    </None>
+    <None Include="languages\qml_ru.ts">
+      <Filter>Translation Files</Filter>
+    </None>
+    <None Include="languages\qml_sv.ts">
+      <Filter>Translation Files</Filter>
+    </None>
+    <None Include="languages\qml_ta.ts">
+      <Filter>Translation Files</Filter>
+    </None>
+    <None Include="languages\qml_th.ts">
+      <Filter>Translation Files</Filter>
+    </None>
+    <None Include="languages\qml_tr.ts">
+      <Filter>Translation Files</Filter>
+    </None>
+    <None Include="languages\qml_uk.ts">
+      <Filter>Translation Files</Filter>
+    </None>
+    <None Include="languages\qml_vi.ts">
+      <Filter>Translation Files</Filter>
+    </None>
+    <None Include="languages\qml_zh_CN.ts">
+      <Filter>Translation Files</Filter>
+    </None>
+    <None Include="languages\qml_zh_TW.ts">
+      <Filter>Translation Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="gui\AppView.qml">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="gui\AutoResizingComboBox.qml">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="gui\CenteredGridView.qml">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="gui\CliPair.qml">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="gui\CliQuitStreamSegue.qml">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="gui\CliStartStreamSegue.qml">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="gui\ErrorMessageDialog.qml">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="gui\GamepadMapper.qml">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <None Include="ModeSeven.ttf">
+      <Filter>Resource Files</Filter>
+    </None>
+    <CustomBuild Include="gui\NavigableDialog.qml">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="gui\NavigableItemDelegate.qml">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="gui\NavigableMenu.qml">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="gui\NavigableMenuItem.qml">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="gui\NavigableMessageDialog.qml">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="gui\NavigableToolButton.qml">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="gui\PcView.qml">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="gui\QuitSegue.qml">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="gui\SettingsView.qml">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="gui\StreamSegue.qml">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <None Include="res\arrow_left.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\baseline-check_circle_outline-24px.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\baseline-error_outline-24px.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\baseline-help_outline-24px.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\baseline-lock-24px.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\baseline-warning-24px.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="shaders\d3d11_ayuv_pixel.fxc">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="shaders\d3d11_bt2020lim_pixel.fxc">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="shaders\d3d11_bt601lim_pixel.fxc">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="shaders\d3d11_genyuv_pixel.fxc">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="shaders\d3d11_overlay_pixel.fxc">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="shaders\d3d11_vertex.fxc">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="shaders\d3d11_y410_pixel.fxc">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\desktop_windows-48px.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\discord.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="shaders\egl_nv12.frag">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="shaders\egl_nv12.vert">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="shaders\egl_opaque.frag">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="shaders\egl_opaque.vert">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="shaders\egl_overlay.frag">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="shaders\egl_overlay.vert">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="SDL_GameControllerDB\gamecontrollerdb.txt">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\ic_add_to_queue_white_48px.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\ic_videogame_asset_white_48px.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <CustomBuild Include="gui\main.qml">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <None Include="res\moonlight.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\no_app_image.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\play_arrow_FILL1_wght700_GRAD200_opsz48.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <QtRcc Include="qml.qrc">
+      <Filter>Resource Files</Filter>
+    </QtRcc>
+    <None Include="languages\qml_bg.qm">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="languages\qml_bg.ts">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="languages\qml_ckb.qm">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="languages\qml_ckb.ts">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="languages\qml_cs.qm">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="languages\qml_cs.ts">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="languages\qml_de.qm">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="languages\qml_de.ts">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="languages\qml_el.qm">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="languages\qml_el.ts">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="languages\qml_eo.qm">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="languages\qml_eo.ts">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="languages\qml_es.qm">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="languages\qml_es.ts">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="languages\qml_et.qm">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="languages\qml_et.ts">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="languages\qml_fr.qm">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="languages\qml_fr.ts">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="languages\qml_he.qm">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="languages\qml_he.ts">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="languages\qml_hi.qm">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="languages\qml_hi.ts">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="languages\qml_hu.qm">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="languages\qml_hu.ts">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="languages\qml_it.qm">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="languages\qml_it.ts">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="languages\qml_ja.qm">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="languages\qml_ja.ts">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="languages\qml_ko.qm">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="languages\qml_ko.ts">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="languages\qml_lt.qm">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="languages\qml_lt.ts">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="languages\qml_nb_NO.qm">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="languages\qml_nb_NO.ts">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="languages\qml_nl.qm">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="languages\qml_nl.ts">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="languages\qml_pl.qm">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="languages\qml_pl.ts">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="languages\qml_pt.qm">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="languages\qml_pt.ts">
+      <Filter>Resource Files</Filter>
+    </None>
+    <QtRcc Include="qml_qmlcache.qrc">
+      <Filter>Resource Files</Filter>
+    </QtRcc>
+    <None Include="languages\qml_ru.qm">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="languages\qml_ru.ts">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="languages\qml_sv.qm">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="languages\qml_sv.ts">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="languages\qml_ta.qm">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="languages\qml_ta.ts">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="languages\qml_th.qm">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="languages\qml_th.ts">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="languages\qml_tr.qm">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="languages\qml_tr.ts">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="languages\qml_uk.qm">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="languages\qml_uk.ts">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="languages\qml_vi.qm">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="languages\qml_vi.ts">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="languages\qml_zh_CN.qm">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="languages\qml_zh_CN.ts">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="languages\qml_zh_TW.qm">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="languages\qml_zh_TW.ts">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\question_mark.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <QtRcc Include="resources.qrc">
+      <Filter>Resource Files</Filter>
+    </QtRcc>
+    <None Include="res\settings.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\stop_FILL1_wght700_GRAD200_opsz48.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\update.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="shaders\vt_renderer.metal">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\warning_FILL1_wght300_GRAD200_opsz24.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include=".\Moonlight_resource.rc" />
+  </ItemGroup>
+</Project>
