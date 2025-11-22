@@ -14,13 +14,13 @@
     <ProjectGuid>{122EE33C-1D84-3C1E-8E60-75208AB04A3E}</ProjectGuid>
     <RootNamespace>Moonlight</RootNamespace>
     <Keyword>QtVS_v304</Keyword>
-    <WindowsTargetPlatformVersion>10.0.22621.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
     <WindowsTargetPlatformMinVersion>10.0.22621.0</WindowsTargetPlatformMinVersion>
     <QtMsBuild Condition="'$(QtMsBuild)'=='' OR !Exists('$(QtMsBuild)\qt.targets')">$(MSBuildProjectDirectory)\QtMsBuild</QtMsBuild>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
-    <PlatformToolset>v143</PlatformToolset>
+    <PlatformToolset>v145</PlatformToolset>
     <OutputDirectory>release\</OutputDirectory>
     <ATLMinimizesCRunTimeLibraryUsage>false</ATLMinimizesCRunTimeLibraryUsage>
     <CharacterSet>NotSet</CharacterSet>
@@ -30,7 +30,7 @@
     <EmbedManifest>true</EmbedManifest>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
-    <PlatformToolset>v143</PlatformToolset>
+    <PlatformToolset>v145</PlatformToolset>
     <OutputDirectory>debug\</OutputDirectory>
     <ATLMinimizesCRunTimeLibraryUsage>false</ATLMinimizesCRunTimeLibraryUsage>
     <CharacterSet>NotSet</CharacterSet>
@@ -98,7 +98,7 @@
     </ClCompile>
     <Link>
       <AdditionalDependencies>ws2_32.lib;winmm.lib;dxva2.lib;ole32.lib;gdi32.lib;user32.lib;d3d9.lib;dwmapi.lib;dbghelp.lib;D:\WorkSpace\QtSpace\moonlight-qt\libs\windows\lib\x64\libssl.lib;D:\WorkSpace\QtSpace\moonlight-qt\libs\windows\lib\x64\libcrypto.lib;D:\WorkSpace\QtSpace\moonlight-qt\libs\windows\lib\x64\SDL2.lib;D:\WorkSpace\QtSpace\moonlight-qt\libs\windows\lib\x64\SDL2_ttf.lib;D:\WorkSpace\QtSpace\moonlight-qt\libs\windows\lib\x64\avcodec.lib;D:\WorkSpace\QtSpace\moonlight-qt\libs\windows\lib\x64\avutil.lib;D:\WorkSpace\QtSpace\moonlight-qt\libs\windows\lib\x64\swscale.lib;D:\WorkSpace\QtSpace\moonlight-qt\libs\windows\lib\x64\opus.lib;dxgi.lib;d3d11.lib;D:\WorkSpace\QtSpace\moonlight-qt\libs\windows\lib\x64\libplacebo.lib;D:\WorkSpace\QtSpace\moonlight-qt\libs\windows\lib\x64\discord-rpc.lib;moonlight-common-c.lib;qmdnsengine.lib;h264bitstream.lib;AntiHooking.lib;$(QTDIR)\lib\Qt6QmlModels.lib;$(QTDIR)\lib\Qt6EntryPoint.lib;shell32.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <AdditionalLibraryDirectories>D:\WorkSpace\QtSpace\moonlight-qt\libs\windows\lib\x64;D:\WorkSpace\QtSpace\moonlight-qt\moonlight-common-c\bin\$(Platform)\$(Configuration);D:\WorkSpace\QtSpace\moonlight-qt\qmdnsengine\bin\$(Platform)\$(Configuration);D:\WorkSpace\QtSpace\moonlight-qt\h264bitstream\bin\$(Platform)\$(Configuration);D:\WorkSpace\QtSpace\moonlight-qt\AntiHooking\bin\$(Platform)\$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(MSBuildStartupDirectory)\libs\windows\lib\x64;$(MSBuildStartupDirectory)\moonlight-common-c\bin\$(Platform)\$(Configuration);$(MSBuildStartupDirectory)\qmdnsengine\bin\$(Platform)\$(Configuration);$(MSBuildStartupDirectory)\h264bitstream\bin\$(Platform)\$(Configuration);$(MSBuildStartupDirectory)\AntiHooking\bin\$(Platform)\$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalOptions>-guard:cf -guard:ehcont -cetcompat /MANIFESTINPUT:./Moonlight.exe.manifest "/MANIFESTDEPENDENCY:type='win32' name='Microsoft.Windows.Common-Controls' version='6.0.0.0' publicKeyToken='6595b64144ccf1df' language='*' processorArchitecture='*'" %(AdditionalOptions)</AdditionalOptions>
       <DataExecutionPrevention>true</DataExecutionPrevention>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
@@ -109,7 +109,7 @@
       <OptimizeReferences>true</OptimizeReferences>
       <OutputFile>$(OutDir)\Moonlight.exe</OutputFile>
       <RandomizedBaseAddress>true</RandomizedBaseAddress>
-      <SubSystem>Windows</SubSystem>
+      <SubSystem>Console</SubSystem>
       <SuppressStartupBanner>true</SuppressStartupBanner>
       <Version>6.1</Version>
     </Link>
@@ -164,7 +164,7 @@ xcopy "$(ProjectDir)..\AntiHooking\bin\$(Platform)\$(Configuration)\*.dll" ".\bi
     </ClCompile>
     <Link>
       <AdditionalDependencies>ws2_32.lib;winmm.lib;dxva2.lib;ole32.lib;gdi32.lib;user32.lib;d3d9.lib;dwmapi.lib;dbghelp.lib;D:\WorkSpace\QtSpace\moonlight-qt\libs\windows\lib\x64\libssl.lib;D:\WorkSpace\QtSpace\moonlight-qt\libs\windows\lib\x64\libcrypto.lib;D:\WorkSpace\QtSpace\moonlight-qt\libs\windows\lib\x64\SDL2.lib;D:\WorkSpace\QtSpace\moonlight-qt\libs\windows\lib\x64\SDL2_ttf.lib;D:\WorkSpace\QtSpace\moonlight-qt\libs\windows\lib\x64\avcodec.lib;D:\WorkSpace\QtSpace\moonlight-qt\libs\windows\lib\x64\avutil.lib;D:\WorkSpace\QtSpace\moonlight-qt\libs\windows\lib\x64\swscale.lib;D:\WorkSpace\QtSpace\moonlight-qt\libs\windows\lib\x64\opus.lib;dxgi.lib;d3d11.lib;D:\WorkSpace\QtSpace\moonlight-qt\libs\windows\lib\x64\libplacebo.lib;D:\WorkSpace\QtSpace\moonlight-qt\libs\windows\lib\x64\discord-rpc.lib;moonlight-common-c.lib;qmdnsengine.lib;h264bitstream.lib;AntiHooking.lib;$(QTDIR)\lib\Qt6QmlModelsd.lib;$(QTDIR)\lib\Qt6EntryPointd.lib;shell32.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <AdditionalLibraryDirectories>D:\WorkSpace\QtSpace\moonlight-qt\libs\windows\lib\x64;D:\WorkSpace\QtSpace\moonlight-qt\moonlight-common-c\bin\$(Platform)\$(Configuration);D:\WorkSpace\QtSpace\moonlight-qt\qmdnsengine\bin\$(Platform)\$(Configuration);D:\WorkSpace\QtSpace\moonlight-qt\h264bitstream\bin\$(Platform)\$(Configuration);D:\WorkSpace\QtSpace\moonlight-qt\AntiHooking\bin\$(Platform)\$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(MSBuildStartupDirectory)\libs\windows\lib\x64;$(MSBuildStartupDirectory)\moonlight-common-c\bin\$(Platform)\$(Configuration);$(MSBuildStartupDirectory)\qmdnsengine\bin\$(Platform)\$(Configuration);$(MSBuildStartupDirectory)\h264bitstream\bin\$(Platform)\$(Configuration);$(MSBuildStartupDirectory)\AntiHooking\bin\$(Platform)\$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalOptions>-guard:cf -guard:ehcont -cetcompat /MANIFESTINPUT:./Moonlight.exe.manifest "/MANIFESTDEPENDENCY:type='win32' name='Microsoft.Windows.Common-Controls' version='6.0.0.0' publicKeyToken='6595b64144ccf1df' language='*' processorArchitecture='*'" %(AdditionalOptions)</AdditionalOptions>
       <DataExecutionPrevention>true</DataExecutionPrevention>
       <GenerateDebugInformation>true</GenerateDebugInformation>
@@ -172,7 +172,7 @@ xcopy "$(ProjectDir)..\AntiHooking\bin\$(Platform)\$(Configuration)\*.dll" ".\bi
       <IgnoreImportLibrary>true</IgnoreImportLibrary>
       <OutputFile>$(OutDir)\Moonlight.exe</OutputFile>
       <RandomizedBaseAddress>true</RandomizedBaseAddress>
-      <SubSystem>Windows</SubSystem>
+      <SubSystem>Console</SubSystem>
       <SuppressStartupBanner>true</SuppressStartupBanner>
       <Version>6.1</Version>
     </Link>
