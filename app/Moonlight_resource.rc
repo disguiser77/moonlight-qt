@@ -1,6 +1,6 @@
 #include <windows.h>
 
-IDI_ICON1	ICON	"D:\\WorkSpace\\QtSpace\\moonlight-qt\\app\\moonlight.ico"
+IDI_ICON1	ICON	".\\moonlight.ico"
 
 VS_VERSION_INFO VERSIONINFO
 	FILEVERSION 6,1,0,0
